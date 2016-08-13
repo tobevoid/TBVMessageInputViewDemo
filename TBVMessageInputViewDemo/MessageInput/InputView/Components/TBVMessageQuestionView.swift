@@ -45,6 +45,7 @@ class TBVMessageQuestionView: UIView {
     
     var isQuestioning = Bool(false)
     weak var delegate: TBVMessageQuestionViewDelegate?
+    
     // MARK:  life cycle
     override init(frame: CGRect) {
         super.init(frame: frame)

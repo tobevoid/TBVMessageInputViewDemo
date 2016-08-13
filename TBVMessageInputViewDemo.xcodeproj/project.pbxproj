@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		524F3207F476C244FA6D71E7 /* Pods_TBVMessageInputViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BF6AB38D0F80A3D32CC440 /* Pods_TBVMessageInputViewDemo.framework */; };
+		D6CC20761D5F560D00DAE607 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20751D5F560D00DAE607 /* AppDelegate.swift */; };
+		D6CC20781D5F560D00DAE607 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20771D5F560D00DAE607 /* ViewController.swift */; };
+		D6CC207B1D5F560D00DAE607 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CC20791D5F560D00DAE607 /* Main.storyboard */; };
+		D6CC207D1D5F560E00DAE607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6CC207C1D5F560E00DAE607 /* Assets.xcassets */; };
+		D6CC20801D5F560E00DAE607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CC207E1D5F560E00DAE607 /* LaunchScreen.storyboard */; };
+		D6CC208B1D5F581000DAE607 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20871D5F581000DAE607 /* SecondViewController.swift */; };
+		D6CC208C1D5F581000DAE607 /* UIApplication+Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20881D5F581000DAE607 /* UIApplication+Controller.swift */; };
+		D6CC208D1D5F581000DAE607 /* UITextField+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20891D5F581000DAE607 /* UITextField+Placeholder.swift */; };
+		D6CC208E1D5F581000DAE607 /* UIView+Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC208A1D5F581000DAE607 /* UIView+Controller.swift */; };
+		D6CC20B91D5F582000DAE607 /* TBVAudioRecorderFailHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20911D5F582000DAE607 /* TBVAudioRecorderFailHandler.swift */; };
+		D6CC20BA1D5F582000DAE607 /* TBVAudioRecorderFailHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20921D5F582000DAE607 /* TBVAudioRecorderFailHandlerProtocol.swift */; };
+		D6CC20BB1D5F582000DAE607 /* TBVAudioRecorderCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20931D5F582000DAE607 /* TBVAudioRecorderCacheManager.swift */; };
+		D6CC20BC1D5F582000DAE607 /* TBVAudioRecorderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20941D5F582000DAE607 /* TBVAudioRecorderManager.swift */; };
+		D6CC20BD1D5F582000DAE607 /* AVAudioRecorder+VolumeLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20951D5F582000DAE607 /* AVAudioRecorder+VolumeLevel.swift */; };
+		D6CC20BF1D5F582000DAE607 /* TBVProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20971D5F582000DAE607 /* TBVProperty.swift */; };
+		D6CC20C01D5F582000DAE607 /* UIColor+Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20981D5F582000DAE607 /* UIColor+Factory.swift */; };
+		D6CC20C21D5F582000DAE607 /* TBVMessageInputCoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC209C1D5F582000DAE607 /* TBVMessageInputCoreView.swift */; };
+		D6CC20C31D5F582000DAE607 /* TPCMessageAudioCancelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20A01D5F582000DAE607 /* TPCMessageAudioCancelView.swift */; };
+		D6CC20C41D5F582000DAE607 /* TPCMessageAudioCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20A11D5F582000DAE607 /* TPCMessageAudioCountdownView.swift */; };
+		D6CC20C51D5F582000DAE607 /* TPCMessageAudioTipLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20A21D5F582000DAE607 /* TPCMessageAudioTipLabel.swift */; };
+		D6CC20C61D5F582000DAE607 /* TPCMessageAudioTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20A31D5F582000DAE607 /* TPCMessageAudioTipView.swift */; };
+		D6CC20C71D5F582000DAE607 /* TPCMessageAudioVolumeLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20A41D5F582000DAE607 /* TPCMessageAudioVolumeLevelView.swift */; };
+		D6CC20C81D5F582000DAE607 /* TPCMessageAudioWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20A51D5F582000DAE607 /* TPCMessageAudioWarningView.swift */; };
+		D6CC20C91D5F582000DAE607 /* TPCMessageAudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20A61D5F582000DAE607 /* TPCMessageAudioView.swift */; };
+		D6CC20CA1D5F582000DAE607 /* TPCMessageQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20A71D5F582000DAE607 /* TPCMessageQuestionView.swift */; };
+		D6CC20CB1D5F582000DAE607 /* TBVAudioMessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20A81D5F582000DAE607 /* TBVAudioMessageInputView.swift */; };
+		D6CC20CC1D5F582000DAE607 /* TBVMessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20A91D5F582000DAE607 /* TBVMessageInputView.swift */; };
+		D6CC20CD1D5F582000DAE607 /* TBVMessageInputViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20AA1D5F582000DAE607 /* TBVMessageInputViewProtocol.swift */; };
+		D6CC20CE1D5F582000DAE607 /* TBVQuestionMessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20AB1D5F582000DAE607 /* TBVQuestionMessageInputView.swift */; };
+		D6CC20CF1D5F582000DAE607 /* TBVTextMessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20AC1D5F582000DAE607 /* TBVTextMessageInputView.swift */; };
+		D6CC20D01D5F582000DAE607 /* MessageInput.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6CC20AE1D5F582000DAE607 /* MessageInput.xcassets */; };
+		D6CC20D11D5F582000DAE607 /* TBVMessageKeyboardMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20B01D5F582000DAE607 /* TBVMessageKeyboardMonitor.swift */; };
+		D6CC20D21D5F582000DAE607 /* TBVMessageMonitorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20B11D5F582000DAE607 /* TBVMessageMonitorProtocol.swift */; };
+		D6CC20D31D5F582000DAE607 /* TBVMessageTextViewMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20B21D5F582000DAE607 /* TBVMessageTextViewMonitor.swift */; };
+		D6CC20D41D5F582000DAE607 /* TBVPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20B41D5F582000DAE607 /* TBVPlaceholderTextView.swift */; };
+		D6CC20D51D5F582000DAE607 /* TBVMessageValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20B61D5F582000DAE607 /* TBVMessageValidator.swift */; };
+		D6CC20D61D5F582000DAE607 /* TBVMessageValidatorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20B71D5F582000DAE607 /* TBVMessageValidatorHandler.swift */; };
+		D6CC20D71D5F582000DAE607 /* TBVMessageValidatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CC20B81D5F582000DAE607 /* TBVMessageValidatorProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0404FE2D559C43590627F544 /* Pods-TBVMessageInputViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBVMessageInputViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TBVMessageInputViewDemo/Pods-TBVMessageInputViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		05BF6AB38D0F80A3D32CC440 /* Pods_TBVMessageInputViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TBVMessageInputViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2177F995DB3675081564A581 /* Pods-TBVMessageInputViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TBVMessageInputViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TBVMessageInputViewDemo/Pods-TBVMessageInputViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D6CC20721D5F560D00DAE607 /* TBVMessageInputViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBVMessageInputViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6CC20751D5F560D00DAE607 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D6CC20771D5F560D00DAE607 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6CC207A1D5F560D00DAE607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D6CC207C1D5F560E00DAE607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D6CC207F1D5F560E00DAE607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D6CC20811D5F560E00DAE607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6CC20871D5F581000DAE607 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D6CC20881D5F581000DAE607 /* UIApplication+Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Controller.swift"; sourceTree = "<group>"; };
+		D6CC20891D5F581000DAE607 /* UITextField+Placeholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Placeholder.swift"; sourceTree = "<group>"; };
+		D6CC208A1D5F581000DAE607 /* UIView+Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Controller.swift"; sourceTree = "<group>"; };
+		D6CC20911D5F582000DAE607 /* TBVAudioRecorderFailHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBVAudioRecorderFailHandler.swift; sourceTree = "<group>"; };
+		D6CC20921D5F582000DAE607 /* TBVAudioRecorderFailHandlerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBVAudioRecorderFailHandlerProtocol.swift; sourceTree = "<group>"; };
+		D6CC20931D5F582000DAE607 /* TBVAudioRecorderCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBVAudioRecorderCacheManager.swift; sourceTree = "<group>"; };
+		D6CC20941D5F582000DAE607 /* TBVAudioRecorderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBVAudioRecorderManager.swift; sourceTree = "<group>"; };
+		D6CC20951D5F582000DAE607 /* AVAudioRecorder+VolumeLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVAudioRecorder+VolumeLevel.swift"; sourceTree = "<group>"; };
+		D6CC20971D5F582000DAE607 /* TBVProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBVProperty.swift; sourceTree = "<group>"; };
+		D6CC20981D5F582000DAE607 /* UIColor+Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Factory.swift"; sourceTree = "<group>"; };
+		D6CC209C1D5F582000DAE607 /* TBVMessageInputCoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBVMessageInputCoreView.swift; sourceTree = "<group>"; };
+		D6CC20A01D5F582000DAE607 /* TPCMessageAudioCancelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPCMessageAudioCancelView.swift; sourceTree = "<group>"; };
+		D6CC20A11D5F582000DAE607 /* TPCMessageAudioCountdownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPCMessageAudioCountdownView.swift; sourceTree = "<group>"; };
+		D6CC20A21D5F582000DAE607 /* TPCMessageAudioTipLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPCMessageAudioTipLabel.swift; sourceTree = "<group>"; };
+		D6CC20A31D5F582000DAE607 /* TPCMessageAudioTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPCMessageAudioTipView.swift; sourceTree = "<group>"; };
+		D6CC20A41D5F582000DAE607 /* TPCMessageAudioVolumeLevelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPCMessageAudioVolumeLevelView.swift; sourceTree = "<group>"; };
+		D6CC20A51D5F582000DAE607 /* TPCMessageAudioWarningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPCMessageAudioWarningView.swift; sourceTree = "<group>"; };
+		D6CC20A61D5F582000DAE607 /* TPCMessageAudioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPCMessageAudioView.swift; sourceTree = "<group>"; };
+		D6CC20A71D5F582000DAE607 /* TPCMessageQuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPCMessageQuestionView.swift; sourceTree = "<group>"; };
+		D6CC20A81D5F582000DAE607 /* TBVAudioMessageInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBVAudioMessageInputView.swift; sourceTree = "<group>"; };
+		D6CC20A91D5F582000DAE607 /* TBVMessageInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBVMessageInputView.swift; sourceTree = "<group>"; };
+		D6CC20AA1D5F582000DAE607 /* TBVMessageInputViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBVMessageInputViewProtocol.swift; sourceTree = "<group>"; };
+		D6CC20AB1D5F582000DAE607 /* TBVQuestionMessageInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBVQuestionMessageInputView.swift; sourceTree = "<group>"; };
+		D6CC20AC1D5F582000DAE607 /* TBVTextMessageInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBVTextMessageInputView.swift; sourceTree = "<group>"; };
+		D6CC20AE1D5F582000DAE607 /* MessageInput.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MessageInput.xcassets; sourceTree = "<group>"; };
+		D6CC20B01D5F582000DAE607 /* TBVMessageKeyboardMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBVMessageKeyboardMonitor.swift; sourceTree = "<group>"; };
+		D6CC20B11D5F582000DAE607 /* TBVMessageMonitorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBVMessageMonitorProtocol.swift; sourceTree = "<group>"; };
+		D6CC20B21D5F582000DAE607 /* TBVMessageTextViewMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBVMessageTextViewMonitor.swift; sourceTree = "<group>"; };
+		D6CC20B41D5F582000DAE607 /* TBVPlaceholderTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBVPlaceholderTextView.swift; sourceTree = "<group>"; };
+		D6CC20B61D5F582000DAE607 /* TBVMessageValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBVMessageValidator.swift; sourceTree = "<group>"; };
+		D6CC20B71D5F582000DAE607 /* TBVMessageValidatorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBVMessageValidatorHandler.swift; sourceTree = "<group>"; };
+		D6CC20B81D5F582000DAE607 /* TBVMessageValidatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TBVMessageValidatorProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6CC206F1D5F560D00DAE607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524F3207F476C244FA6D71E7 /* Pods_TBVMessageInputViewDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7270F17270FD6EEEE43CD048 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0404FE2D559C43590627F544 /* Pods-TBVMessageInputViewDemo.debug.xcconfig */,
+				2177F995DB3675081564A581 /* Pods-TBVMessageInputViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7FF62B244D5E24EFBC5D2EFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05BF6AB38D0F80A3D32CC440 /* Pods_TBVMessageInputViewDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6CC20691D5F560D00DAE607 = {
+			isa = PBXGroup;
+			children = (
+				D6CC20741D5F560D00DAE607 /* TBVMessageInputViewDemo */,
+				D6CC20731D5F560D00DAE607 /* Products */,
+				7270F17270FD6EEEE43CD048 /* Pods */,
+				7FF62B244D5E24EFBC5D2EFA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D6CC20731D5F560D00DAE607 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC20721D5F560D00DAE607 /* TBVMessageInputViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6CC20741D5F560D00DAE607 /* TBVMessageInputViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC209A1D5F582000DAE607 /* MessageInput */,
+				D6CC208F1D5F582000DAE607 /* AudioRecoder */,
+				D6CC20951D5F582000DAE607 /* AVAudioRecorder+VolumeLevel.swift */,
+				D6CC20881D5F581000DAE607 /* UIApplication+Controller.swift */,
+				D6CC20891D5F581000DAE607 /* UITextField+Placeholder.swift */,
+				D6CC208A1D5F581000DAE607 /* UIView+Controller.swift */,
+				D6CC20981D5F582000DAE607 /* UIColor+Factory.swift */,
+				D6CC20971D5F582000DAE607 /* TBVProperty.swift */,
+				D6CC20751D5F560D00DAE607 /* AppDelegate.swift */,
+				D6CC20771D5F560D00DAE607 /* ViewController.swift */,
+				D6CC20871D5F581000DAE607 /* SecondViewController.swift */,
+				D6CC20791D5F560D00DAE607 /* Main.storyboard */,
+				D6CC207C1D5F560E00DAE607 /* Assets.xcassets */,
+				D6CC207E1D5F560E00DAE607 /* LaunchScreen.storyboard */,
+				D6CC20811D5F560E00DAE607 /* Info.plist */,
+			);
+			path = TBVMessageInputViewDemo;
+			sourceTree = "<group>";
+		};
+		D6CC208F1D5F582000DAE607 /* AudioRecoder */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC20901D5F582000DAE607 /* FailHandler */,
+				D6CC20931D5F582000DAE607 /* TBVAudioRecorderCacheManager.swift */,
+				D6CC20941D5F582000DAE607 /* TBVAudioRecorderManager.swift */,
+			);
+			path = AudioRecoder;
+			sourceTree = "<group>";
+		};
+		D6CC20901D5F582000DAE607 /* FailHandler */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC20911D5F582000DAE607 /* TBVAudioRecorderFailHandler.swift */,
+				D6CC20921D5F582000DAE607 /* TBVAudioRecorderFailHandlerProtocol.swift */,
+			);
+			path = FailHandler;
+			sourceTree = "<group>";
+		};
+		D6CC209A1D5F582000DAE607 /* MessageInput */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC209B1D5F582000DAE607 /* CoreView */,
+				D6CC209D1D5F582000DAE607 /* InputView */,
+				D6CC20AD1D5F582000DAE607 /* Manager */,
+				D6CC20AE1D5F582000DAE607 /* MessageInput.xcassets */,
+				D6CC20AF1D5F582000DAE607 /* Monitor */,
+				D6CC20B31D5F582000DAE607 /* TextView */,
+				D6CC20B51D5F582000DAE607 /* Validator */,
+			);
+			path = MessageInput;
+			sourceTree = "<group>";
+		};
+		D6CC209B1D5F582000DAE607 /* CoreView */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC209C1D5F582000DAE607 /* TBVMessageInputCoreView.swift */,
+			);
+			path = CoreView;
+			sourceTree = "<group>";
+		};
+		D6CC209D1D5F582000DAE607 /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC209E1D5F582000DAE607 /* Components */,
+				D6CC20A81D5F582000DAE607 /* TBVAudioMessageInputView.swift */,
+				D6CC20A91D5F582000DAE607 /* TBVMessageInputView.swift */,
+				D6CC20AA1D5F582000DAE607 /* TBVMessageInputViewProtocol.swift */,
+				D6CC20AB1D5F582000DAE607 /* TBVQuestionMessageInputView.swift */,
+				D6CC20AC1D5F582000DAE607 /* TBVTextMessageInputView.swift */,
+			);
+			path = InputView;
+			sourceTree = "<group>";
+		};
+		D6CC209E1D5F582000DAE607 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC209F1D5F582000DAE607 /* AudioTipView */,
+				D6CC20A61D5F582000DAE607 /* TPCMessageAudioView.swift */,
+				D6CC20A71D5F582000DAE607 /* TPCMessageQuestionView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D6CC209F1D5F582000DAE607 /* AudioTipView */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC20A01D5F582000DAE607 /* TPCMessageAudioCancelView.swift */,
+				D6CC20A11D5F582000DAE607 /* TPCMessageAudioCountdownView.swift */,
+				D6CC20A21D5F582000DAE607 /* TPCMessageAudioTipLabel.swift */,
+				D6CC20A31D5F582000DAE607 /* TPCMessageAudioTipView.swift */,
+				D6CC20A41D5F582000DAE607 /* TPCMessageAudioVolumeLevelView.swift */,
+				D6CC20A51D5F582000DAE607 /* TPCMessageAudioWarningView.swift */,
+			);
+			path = AudioTipView;
+			sourceTree = "<group>";
+		};
+		D6CC20AD1D5F582000DAE607 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D6CC20AF1D5F582000DAE607 /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC20B01D5F582000DAE607 /* TBVMessageKeyboardMonitor.swift */,
+				D6CC20B11D5F582000DAE607 /* TBVMessageMonitorProtocol.swift */,
+				D6CC20B21D5F582000DAE607 /* TBVMessageTextViewMonitor.swift */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
+		D6CC20B31D5F582000DAE607 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC20B41D5F582000DAE607 /* TBVPlaceholderTextView.swift */,
+			);
+			path = TextView;
+			sourceTree = "<group>";
+		};
+		D6CC20B51D5F582000DAE607 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				D6CC20B61D5F582000DAE607 /* TBVMessageValidator.swift */,
+				D6CC20B71D5F582000DAE607 /* TBVMessageValidatorHandler.swift */,
+				D6CC20B81D5F582000DAE607 /* TBVMessageValidatorProtocol.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6CC20711D5F560D00DAE607 /* TBVMessageInputViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6CC20841D5F560E00DAE607 /* Build configuration list for PBXNativeTarget "TBVMessageInputViewDemo" */;
+			buildPhases = (
+				E7FB351D1E26303092335B44 /* 📦 Check Pods Manifest.lock */,
+				D6CC206E1D5F560D00DAE607 /* Sources */,
+				D6CC206F1D5F560D00DAE607 /* Frameworks */,
+				D6CC20701D5F560D00DAE607 /* Resources */,
+				3C30D5055E95C3C3DC030DF1 /* 📦 Embed Pods Frameworks */,
+				572A2B4B36492BC76F00F5F5 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TBVMessageInputViewDemo;
+			productName = TBVMessageInputViewDemo;
+			productReference = D6CC20721D5F560D00DAE607 /* TBVMessageInputViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6CC206A1D5F560D00DAE607 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = tripleCC;
+				TargetAttributes = {
+					D6CC20711D5F560D00DAE607 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 7DG5WQWWY9;
+					};
+				};
+			};
+			buildConfigurationList = D6CC206D1D5F560D00DAE607 /* Build configuration list for PBXProject "TBVMessageInputViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6CC20691D5F560D00DAE607;
+			productRefGroup = D6CC20731D5F560D00DAE607 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6CC20711D5F560D00DAE607 /* TBVMessageInputViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6CC20701D5F560D00DAE607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6CC20801D5F560E00DAE607 /* LaunchScreen.storyboard in Resources */,
+				D6CC207D1D5F560E00DAE607 /* Assets.xcassets in Resources */,
+				D6CC20D01D5F582000DAE607 /* MessageInput.xcassets in Resources */,
+				D6CC207B1D5F560D00DAE607 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C30D5055E95C3C3DC030DF1 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TBVMessageInputViewDemo/Pods-TBVMessageInputViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		572A2B4B36492BC76F00F5F5 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TBVMessageInputViewDemo/Pods-TBVMessageInputViewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7FB351D1E26303092335B44 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6CC206E1D5F560D00DAE607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6CC20CD1D5F582000DAE607 /* TBVMessageInputViewProtocol.swift in Sources */,
+				D6CC20C81D5F582000DAE607 /* TPCMessageAudioWarningView.swift in Sources */,
+				D6CC20BD1D5F582000DAE607 /* AVAudioRecorder+VolumeLevel.swift in Sources */,
+				D6CC208B1D5F581000DAE607 /* SecondViewController.swift in Sources */,
+				D6CC20CE1D5F582000DAE607 /* TBVQuestionMessageInputView.swift in Sources */,
+				D6CC20CF1D5F582000DAE607 /* TBVTextMessageInputView.swift in Sources */,
+				D6CC20C51D5F582000DAE607 /* TPCMessageAudioTipLabel.swift in Sources */,
+				D6CC20D41D5F582000DAE607 /* TBVPlaceholderTextView.swift in Sources */,
+				D6CC20781D5F560D00DAE607 /* ViewController.swift in Sources */,
+				D6CC20C61D5F582000DAE607 /* TPCMessageAudioTipView.swift in Sources */,
+				D6CC208C1D5F581000DAE607 /* UIApplication+Controller.swift in Sources */,
+				D6CC20761D5F560D00DAE607 /* AppDelegate.swift in Sources */,
+				D6CC20C71D5F582000DAE607 /* TPCMessageAudioVolumeLevelView.swift in Sources */,
+				D6CC20D11D5F582000DAE607 /* TBVMessageKeyboardMonitor.swift in Sources */,
+				D6CC20D31D5F582000DAE607 /* TBVMessageTextViewMonitor.swift in Sources */,
+				D6CC20C31D5F582000DAE607 /* TPCMessageAudioCancelView.swift in Sources */,
+				D6CC20C41D5F582000DAE607 /* TPCMessageAudioCountdownView.swift in Sources */,
+				D6CC20C91D5F582000DAE607 /* TPCMessageAudioView.swift in Sources */,
+				D6CC20BB1D5F582000DAE607 /* TBVAudioRecorderCacheManager.swift in Sources */,
+				D6CC208E1D5F581000DAE607 /* UIView+Controller.swift in Sources */,
+				D6CC20C21D5F582000DAE607 /* TBVMessageInputCoreView.swift in Sources */,
+				D6CC20BC1D5F582000DAE607 /* TBVAudioRecorderManager.swift in Sources */,
+				D6CC20D21D5F582000DAE607 /* TBVMessageMonitorProtocol.swift in Sources */,
+				D6CC20D71D5F582000DAE607 /* TBVMessageValidatorProtocol.swift in Sources */,
+				D6CC20D61D5F582000DAE607 /* TBVMessageValidatorHandler.swift in Sources */,
+				D6CC20BF1D5F582000DAE607 /* TBVProperty.swift in Sources */,
+				D6CC20B91D5F582000DAE607 /* TBVAudioRecorderFailHandler.swift in Sources */,
+				D6CC20D51D5F582000DAE607 /* TBVMessageValidator.swift in Sources */,
+				D6CC20C01D5F582000DAE607 /* UIColor+Factory.swift in Sources */,
+				D6CC208D1D5F581000DAE607 /* UITextField+Placeholder.swift in Sources */,
+				D6CC20BA1D5F582000DAE607 /* TBVAudioRecorderFailHandlerProtocol.swift in Sources */,
+				D6CC20CA1D5F582000DAE607 /* TPCMessageQuestionView.swift in Sources */,
+				D6CC20CB1D5F582000DAE607 /* TBVAudioMessageInputView.swift in Sources */,
+				D6CC20CC1D5F582000DAE607 /* TBVMessageInputView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D6CC20791D5F560D00DAE607 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6CC207A1D5F560D00DAE607 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D6CC207E1D5F560E00DAE607 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6CC207F1D5F560E00DAE607 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6CC20821D5F560E00DAE607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D6CC20831D5F560E00DAE607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6CC20851D5F560E00DAE607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0404FE2D559C43590627F544 /* Pods-TBVMessageInputViewDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = TBVMessageInputViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.triplec.TBVMessageInputViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		D6CC20861D5F560E00DAE607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2177F995DB3675081564A581 /* Pods-TBVMessageInputViewDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = TBVMessageInputViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.triplec.TBVMessageInputViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6CC206D1D5F560D00DAE607 /* Build configuration list for PBXProject "TBVMessageInputViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6CC20821D5F560E00DAE607 /* Debug */,
+				D6CC20831D5F560E00DAE607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6CC20841D5F560E00DAE607 /* Build configuration list for PBXNativeTarget "TBVMessageInputViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6CC20851D5F560E00DAE607 /* Debug */,
+				D6CC20861D5F560E00DAE607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6CC206A1D5F560D00DAE607 /* Project object */;
+}

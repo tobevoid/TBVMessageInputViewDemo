@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5n6-Vu-Ziq">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="lZb-gb-vuT">
+            <objects>
+                <viewController id="SZh-MZ-V8B" customClass="ViewController" customModule="TBVMessageInputViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7so-sv-GvF"/>
+                        <viewControllerLayoutGuide type="bottom" id="AU2-D7-rpZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XIi-Kf-jJI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o7D-ie-QLt">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="SZh-MZ-V8B" id="Bob-ad-7jE"/>
+                                    <outlet property="delegate" destination="SZh-MZ-V8B" id="GYJ-5z-tGH"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o7D-ie-QLt" firstAttribute="top" secondItem="7so-sv-GvF" secondAttribute="bottom" id="D6j-V0-QO4"/>
+                            <constraint firstAttribute="trailing" secondItem="o7D-ie-QLt" secondAttribute="trailing" id="SAf-aj-OUk"/>
+                            <constraint firstItem="AU2-D7-rpZ" firstAttribute="top" secondItem="o7D-ie-QLt" secondAttribute="bottom" id="ZqV-bK-XVR"/>
+                            <constraint firstItem="o7D-ie-QLt" firstAttribute="leading" secondItem="XIi-Kf-jJI" secondAttribute="leading" id="qcR-2Q-Yut"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kI8-QS-BJe">
+                        <barButtonItem key="rightBarButtonItem" title="push" id="Yhl-YV-GHx">
+                            <connections>
+                                <segue destination="ThK-Ky-BYM" kind="show" id="imV-4a-vAY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="ThK-Ky-BYM" kind="show" id="0Sh-eJ-9WT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G78-Dy-nsy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877" y="-564"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="I90-zQ-G4k">
+            <objects>
+                <viewController id="ThK-Ky-BYM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J4U-yY-jZI"/>
+                        <viewControllerLayoutGuide type="bottom" id="XXq-wr-Vet"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XxD-J9-Fmu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ixa-G3-wSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1513" y="-564"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yPp-hy-ZYH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5n6-Vu-Ziq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y7v-6g-eZR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SZh-MZ-V8B" kind="relationship" relationship="rootViewController" id="NgZ-c4-S7u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ajg-Mh-3VB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="-564"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="imV-4a-vAY"/>
+    </inferredMetricsTieBreakers>
+</document>
